@@ -17,3 +17,4 @@ for i, num in enumerate(ju):
             result.append("*")
 
 print("".join(result))
+
