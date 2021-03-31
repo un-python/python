@@ -1,4 +1,4 @@
-def dash_insert(data):
+def odd_dash_insert(data):
     result = []
 
     ju = list(map(int, data))
@@ -19,4 +19,4 @@ def dash_insert(data):
 
 
 
-dash_insert(input("input number:"))
+odd_dash_insert(input("input number:"))
