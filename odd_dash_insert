@@ -1,0 +1,19 @@
+data = "2475638"
+
+result = []
+
+ju = list(map(int, data))
+
+for i, num in enumerate(ju):
+    result.append(str(num))
+
+    if i < len(ju) - 1:
+        is_odd = num % 2 == 1
+        is_next_odd = ju[i+1] % 2 == 1
+
+        if is_odd and is_next_odd:
+            result.append("-")
+        elif not is_odd and not is_next_odd:
+            result.append("*")
+
+print("".join(result))
